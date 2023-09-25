@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="wrapper flex flex-col justify-end items-center mt-30">
+      <div class="heading">
+        <h1 class="text-black font-bold text-xl">Temperature Converter</h1>
+      </div>
+      <div id="converter">
+        <label class="font-bold italic" for="fromUnit">From:</label>
+        <select id="fromUnit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+
+        <label class="font-bold italic" for="temperature"
+          >Enter Temperature:</label
+        >
+        <input
+          type="number"
+          id="temperature"
+          placeholder="Enter temperature..."
+        />
+
+        <label class="font-bold italic" for="toUnit">To:</label>
+        <select id="toUnit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+
+        <button class="rounded shadow-md bg-blue-600" id="convertButton">
+          Convert
+        </button>
+
+        <div class="text-white" id="result"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
