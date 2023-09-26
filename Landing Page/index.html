@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>OneSchool</title>
+  </head>
+  <body>
+    <div class="nav-bar font-bold">
+      <nav
+        class="flex justify-between bg-blue-300 items-center shadow-md"
+      >
+        <div class="px-4 cursor-pointer sm:hidden" id="burger">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </div>
+        <div class="icon">
+          <a href="/">
+            <img src="./images/coding-icon.png" width="50px" alt="" />
+          </a>
+        </div>
+        <ul
+          id="nav-bar"
+          class="sm:flex hidden sm:block justify-end gap-10 items-center"
+        >
+          <li class="py-2 px-3 hover:shadow-lg rounded-md">
+            <a href="#">About Me</a>
+          </li>
+          <li class="py-2 px-3 hover:shadow-lg rounded-md">
+            <a href="#">Skills</a>
+          </li>
+          <li class="py-2 px-3 hover:shadow-lg rounded-md mr-5">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrapper grid md:grid-cols-3">
+      <div class="left-column md:col-span-2 flex flex-col items-center">
+        <div
+          id="intro-container"
+          class="introduction flex justify-center my-10"
+        >
+          <h1 id="intro-text" class="font-bold text-xl tracking-wider"></h1>
+        </div>
+        <div class="buttons flex justify-center gap-5">
+          <button
+            class="rounded bg-blue-400 py-2 px-3 shadow-md hover:shadow-lg"
+          >
+            HIRE ME!
+          </button>
+          <button
+            class="rounded bg-blue-400 py-2 px-3 shadow-md hover:shadow-lg"
+          >
+            SEE MY PROJECTS
+          </button>
+        </div>
+      </div>
+      <div class="right-column flex justify-center md:col-span-1">
+        <div
+          class="image-container flex justify-center mt-20 bg-gray-300"
+        >
+          <div
+            class="profile-picture bg-gray-100 w-72 h-96 border overflow-hidden"
+          >
+            <img
+              id="profile-image"
+              src="./images/profile-pic.jpeg"
+              alt=""
+              class="w-full h-full image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
